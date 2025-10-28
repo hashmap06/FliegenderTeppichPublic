@@ -63,6 +63,7 @@ This document outlines the changes made to the project to prepare it for public 
 *   **PayPal Client ID:** Replaced in multiple files with `getenv('PAYPAL_CLIENT_ID')`.
 *   **Database Password:** Replaced in `src/db/database_handler/dbh.classes.php` with `getenv('DB_PASS')`.
 *   **Mail Password:** Replaced in `src/db/PayPal/mailBotNotify.php` with `getenv('MAIL_PASSWORD')`.
+*   **Google Maps API Key:** Replaced in `public/dashboard.payment.php` with `getenv('GOOGLE_MAPS_API_KEY')`.
 
 ## Path and URL Updates
 

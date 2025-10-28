@@ -2,6 +2,10 @@
 
 This is a public-facing version of the FliegenderTeppich bookshop website, an A-Level project. This repository has been cleaned of any sensitive information and reorganized for public release.
 
+## Live Demo
+
+The official version of this project is hosted on a Raspberry Pi and is accessible at: **[https://fliegenderteppich.org/](https://fliegenderteppich.org/)**
+
 ## Features
 
 *   **Book Catalogue:** Browse and search for books.

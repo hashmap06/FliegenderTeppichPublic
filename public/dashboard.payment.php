@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMu1AWFgpYTCpLIB25eM7qKN7x981Fg30&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo getenv('GOOGLE_MAPS_API_KEY') ?: 'REPLACE_ME'; ?>&libraries=places"></script>
 
     <link rel="stylesheet" href="css/Dashboard/payment_style.css">
 </head>
