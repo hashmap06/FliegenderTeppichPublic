@@ -7,3 +7,4 @@ config/.env
 .DS_Store
 .idea/
 .vscode/
+src/db/PayPal/webhook-log.txt
