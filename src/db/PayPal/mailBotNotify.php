@@ -39,9 +39,6 @@ class EmailSender
             $subject = $this->title;
             $message = $this->content;
 
-            $to = "schulerphilippprivat@gmail.com"; // admin email name
-            // each mail currently hardcoded to schulerph... as no mail should be sent to sandbox paypal account email
-
             $mail->setFrom('fliegenderteppichverlag@gmail.com', 'Fliegender Teppich');
             $mail->addAddress($to, 'Ute Schuler');
 

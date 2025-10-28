@@ -55,16 +55,16 @@ $bookPrinter = new bookPrint($bookInfo);
 class bookPrint {
     public function __construct($bookInfo) {
         foreach ($bookInfo as $book) {
-            $ISBN = $book['ISBN'];
-            $BookID = $book['BookID'];
-            $Price = $book['Price'];
-            $Author = $book['Author'];
-            $Genre = $book['Genre'];
-            $BookName = $book['BookName'];
-            $ifReal = $book['ifReal'];
-            $PublishYear = $book['PublishYear'];
-            $BookPicture = $book['filepath'];
-            $bookPageURL = $book['subpagepath'];
+            $ISBN = htmlspecialchars($book['ISBN']);
+            $BookID = htmlspecialchars($book['BookID']);
+            $Price = htmlspecialchars($book['Price']);
+            $Author = htmlspecialchars($book['Author']);
+            $Genre = htmlspecialchars($book['Genre']);
+            $BookName = htmlspecialchars($book['BookName']);
+            $ifReal = htmlspecialchars($book['ifReal']);
+            $PublishYear = htmlspecialchars($book['PublishYear']);
+            $BookPicture = htmlspecialchars($book['filepath']);
+            $bookPageURL = htmlspecialchars($book['subpagepath']);
 
             //if (strpos($Price, '.') !== false) {
             $Price = number_format($Price, 2);

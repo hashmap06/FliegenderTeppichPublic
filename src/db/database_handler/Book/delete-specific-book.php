@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+// Check if the user is an admin
+if (!isset($_SESSION['CustomerID']) || !isset($_SESSION['Admin'])) {
+    die('Unauthorized');
+}
+
 if (isset($_GET['bookID'])) {
     $bookID = $_GET['bookID'];
     include("../dbh.classes.php");

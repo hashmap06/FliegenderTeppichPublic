@@ -70,8 +70,6 @@
             <label for="newPassword">Neues Passwort:</label>
             <input type="password" placeholder="Geben Sie ein neues Passwort ein (optional)" id="newPassword" name="newPassword"><br>
 
-            <input type="hidden" name="hashedPassword" value="<?php echo $hashedPWD; ?>">
-
             <input type="hidden" name="customerID" value="<?php echo $customerID; ?>">
 
             <label for="currentPassword">Aktuelles Passwort:</label>

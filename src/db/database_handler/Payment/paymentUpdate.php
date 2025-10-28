@@ -1,6 +1,14 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 
+session_start();
+
+// Check if the user is an admin
+if (!isset($_SESSION['CustomerID']) || !isset($_SESSION['Admin'])) {
+    http_response_code(401);
+    exit('Unauthorized');
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type');
