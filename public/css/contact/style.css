@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(80, 72, 72) !important;
+}
+
+.OberesBanner {
+    width: 100%;
+    text-align: center;
+    background-image: url('../../img/GreyBanner.png');
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: larger;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.LoginFormContainer {
+    background-color: rgb(77, 71, 71);
+    padding: 20px;
+    position: relative;
+    color: rgb(245, 194, 194);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+}
+
+.LoginFormContainer input,
+.LoginFormContainer textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1px dashed rgb(186, 186, 190);
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+.LoginFormContainer textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+}
+
+.LoginFormContainer input[type="submit"] {
+    background-color: red;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.3s;
+    border-radius: 3px !important;
+    letter-spacing: 3px;
+    font-size: large;
+    font-family: 'Anton', sans-serif;
+    transition: letter-spacing 0.5s;
+}
+
+.LoginFormContainer input[type="submit"]:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    letter-spacing: 7px;
+}
+
+@media (max-width: 450px) {
+    .OberesBanner {
+        font-size: medium !important;
+    }
+}
+
+@media (max-width: 385px) {
+    .OberesBanner h1 {
+        font-size: larger;
+    }
+}
+
+
+/* styles applied for dynamic js error message when entering faulty or no value in field */
+
+
+/* Style for the error message container */
+
+.error-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f44336;
+    /* Red background for error */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    z-index: 1000;
+    /* High z-index to appear above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Initially hidden */
+    animation: slideDown 0.5s forwards;
+    margin-bottom: 10px;
+}
+
+
+/* Style for individual input error messages */
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+}
+
+.error {
+    border-color: #f44336;
+}

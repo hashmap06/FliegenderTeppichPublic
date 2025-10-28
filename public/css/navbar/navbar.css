@@ -1,0 +1,293 @@
+/* Navbar */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    position: relative !important;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo svg {
+    fill: #ffffff !important;
+    /* Change color to white */
+    width: 70px;
+    /* Reduce width to make it smaller */
+    height: 70px;
+    /* Reduce height to make it smaller */
+    /* Add any other styles you want here */
+    color: white;
+}
+
+.navbar {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+/* Links */
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.links li {
+    margin-right: 15px;
+}
+
+.links li:last-child {
+    margin-right: 0;
+}
+
+.links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.links li:not(:last-child) a:hover {
+    background-color: #555;
+}
+
+.links li:nth-last-child(2) a:hover {
+    background-color: initial;
+    cursor: pointer;
+}
+
+.links li a.active {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Settings Icon */
+
+.settings-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.settings-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu li a {
+    background-color: transparent;
+    color: inherit;
+    border-radius: 0;
+    transition: none;
+}
+
+.dropdown-menu li:not(:last-child) a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    left: auto;
+    right: 5px;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 8;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #ddd;
+}
+
+.settings-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+
+/* Dropdown Trigger */
+
+.dropdown-trigger:hover+.dropdown-menu,
+.dropdown-trigger:focus+.dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+
+/* Hamburger Icon for responsive */
+
+.hamburger-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    display: none;
+}
+
+.hamburger-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 1007px) {
+    .links {
+        display: none;
+    }
+    .burger-button-animated {
+        display: block !important;
+    }
+    #ClickSpaceMenu {
+        display: block !important;
+    }
+}
+
+
+/* NEW TEST STYLES HAMBURGER ICON */
+
+
+/* Styles for the hamburger icon */
+
+
+/* Add a smooth transition for the icon transformation */
+
+
+/* The CSS rule to transform the hamburger icon into a cross when it's clicked */
+
+.hamburger-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+
+/* Style Class for Sticky Navbar */
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/* Optional: Add padding to the content below the sticky navbar */
+
+#dropdownMenu {
+    border-radius: 7px;
+}
+
+#dropdownMenu li:hover {
+    border-radius: 7px;
+    height: 43px;
+}
+
+.LoginIcon img {
+    filter: grayscale(100%) invert(100%) brightness(300%);
+    width: 30px;
+    vertical-align: middle;
+}
+
+.LoginIcon :hover {
+    cursor: pointer;
+}
+
+
+/* Add animations for cooler icon change */
+
+.LoginIcon {
+    transition: transform 0.3s ease-in-out;
+    animation: rotateIcon 0.5s forwards;
+    /* Apply the animation when the icon changes */
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+/* Customize the icon appearance when open */
+
+.LoginIcon.open {
+    animation: rotateIconReverse 0.5s forwards;
+    /* Apply the reverse animation when closing */
+    filter: invert(30%);
+    /* Invert the colors when open */
+}
+
+@keyframes rotateIconReverse {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Rest of your styles */
+
+.Anmelden_Abmelden {
+    margin-right: 5px !important;
+}
+
+.Anmelden_Abmelden_Hover {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: blue;
+    border-radius: 7px;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+}
+
+Anmelden_Abmelden_Hover :hover {
+    color: rgb(146, 134, 134);
+}
+
+.content {
+    min-height: 100vh;
+}

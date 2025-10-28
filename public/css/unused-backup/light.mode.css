@@ -1,0 +1,88 @@
+/* Light Mode */
+
+*\ .light-mode {
+    --general-icon-color: #000000;
+    /* Color Variables */
+    --primary-bg-color: #333;
+    /* Background color for the navbar */
+    --primary-text-color: #fff;
+    /* Text color for the navbar */
+    --link-color: #fff;
+    /* Color for links in the navbar */
+    --link-hover-color: #555;
+    /* Hover color for links in the navbar */
+    --active-link-bg-color: #fff;
+    /* Background color for the active link in the navbar */
+    --active-link-text-color: #333;
+    /* Text color for the active link in the navbar */
+    --hamburger-icon-color: #000000;
+    /* Color for the hamburger icon */
+    --dropdown-bg-color: grey;
+    /* Background color for the dropdown menu */
+    --dropdown-link-color: inherit;
+    /* Color for links in the dropdown menu */
+    --dropdown-link-hover-color: #1f1d1d;
+    /* Hover color for links in the dropdown menu */
+    --settings-icon-color: rgb(0, 0, 0);
+    /* Color for the settings icon */
+    --sliding-menu-bg-color: #333;
+    /* Background color for the sliding menu */
+    --sliding-menu-icon-color: #272626;
+    /* Color for the menu icon in the sliding menu */
+    --sliding-menu-link-color: #fff;
+    /* Color for links in the sliding menu */
+    --sliding-menu-link-hover-color: #444;
+    /* Hover color for links in the sliding menu */
+    --sliding-menu-active-link-color: #555;
+    /* Color for the active link in the sliding menu */
+    /* Apply Styles using Variables */
+    .navbar {
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+    }
+    .logo svg {
+        fill: var(--general-icon-color) !important;
+    }
+    .links li a {
+        color: var(--link-color);
+    }
+    .links li:not(:last-child) a:hover {
+        background-color: var(--link-hover-color);
+    }
+    .links li a.active {
+        background-color: var(--active-link-bg-color);
+        color: var(--active-link-text-color);
+    }
+    .hamburger-icon svg {
+        fill: var(--hamburger-icon-color);
+    }
+    .dropdown-menu {
+        background-color: var(--dropdown-bg-color);
+    }
+    .dropdown-menu li a {
+        color: var(--dropdown-link-color);
+    }
+    .dropdown-menu li:not(:last-child) a:hover {
+        background-color: var(--dropdown-link-hover-color);
+    }
+    .settings-icon svg {
+        fill: var(--settings-icon-color);
+    }
+    .sliding-menu {
+        background-color: var(--sliding-menu-bg-color);
+    }
+    .menu-icon {
+        color: var(--sliding-menu-icon-color);
+    }
+    .sliding-menu ul li a {
+        color: var(--sliding-menu-link-color);
+    }
+    .sliding-menu ul li a:hover {
+        background-color: var(--sliding-menu-link-hover-color);
+    }
+    .sliding-menu ul li a.active {
+        background-color: var(--sliding-menu-active-link-color);
+    }
+}
+
+*\

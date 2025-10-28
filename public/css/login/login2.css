@@ -1,0 +1,40 @@
+.login2-form-shade {
+    padding-top: 30px;
+}
+
+.login2-form {
+    max-width: 330px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.29);
+    height: 470px;
+    background-color: white;
+}
+
+.login2-form .container {
+    text-align: center;
+}
+
+.login2-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.login2-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.login2-form button {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.background-login2-style {
+    background-image: url('../../img/whiteMusterBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

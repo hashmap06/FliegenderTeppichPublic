@@ -1,0 +1,318 @@
+.see_payment_dashboard {
+    padding-left: 270px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.order-list {
+    position: relative;
+    /* Changed from absolute for better flow */
+    max-width: 1000px;
+    /* Max width for large screens, adjust as needed */
+    margin: auto;
+    /* Centering the list */
+}
+
+.order-item {
+    display: flex;
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-bottom: 2px solid #eee;
+    transition: background-color 0.3s, border-left-color 0.3s;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 1rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-item:hover {
+    background-color: #f1f1f1;
+    /* Slightly darker on hover */
+    border-left-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.sent-checkbox {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .see_payment_dashboard {
+        padding-left: 15px;
+    }
+    .order-item {
+        border-left: 3px solid #007bff;
+        padding: 10px 15px;
+    }
+    .selected-item-active .order-details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .selected-item-active .order-details button {
+        width: 100%;
+    }
+}
+
+.sent-checkbox {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background: white;
+    border: 2px solid #007bff;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox:after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #007bff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+/* Display the checkmark when checkbox is checked */
+
+.sent-checkbox:checked+.custom-checkbox:after {
+    display: block;
+}
+
+.order-item>span {
+    margin-right: 24px;
+}
+
+.order-details {
+    position: absolute;
+    top: 45px;
+    height: 135%;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin-left: 250px;
+    background: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.selected-item-active .order-details {
+    display: flex;
+}
+
+.order-details h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.order-details p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.order-details button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    outline: none;
+    width: 40%;
+    letter-spacing: 3px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.order-details button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1000px) {
+    .order-details {
+        padding: 15px;
+        margin-left: 0px;
+    }
+    .order-details h3 {
+        font-size: 1.2em;
+    }
+    .see_payment_dashboard {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.payment-list-definition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: grey;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.customer-orders h3 {
+    padding: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.chip-filter-orders-chip {
+    padding: 15px;
+    padding-right: 2px;
+    padding-left: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chip-filter-orders-chip span {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.chip-filter-orders-chip button {
+    transform: scale(0.6);
+    vertical-align: middle;
+}
+
+.chip-filter-orders-chip {
+    display: flex;
+    align-items: center;
+}
+
+.mdl-chip {
+    margin-right: 10px;
+}
+
+.mdl-button--fab {
+    margin-left: 10px;
+    margin: 0px !important;
+}
+
+.available-chips {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.available-chips span {
+    background-color: #f1f1f1;
+    border: 1px solid #d6d6d6;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.available-chips span:hover {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+
+.chip-filter-orders-chip {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.chip-filter-orders-chip::-webkit-scrollbar {
+    display: none;
+}
+
+.chip-filter {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+/*
+
+.order-list,
+.order-details {
+    transition: transform 0.5s ease-in-out;
+}
+
+.order-list {
+    position: absolute;
+    width: 100%;
+}
+
+.order-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sent-checkbox {
+    margin-left: auto;
+}
+
+.order-details {
+    position: absolute;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: white;
+    padding: 20px;
+}
+
+.selected-item-active .order-details {
+    transform: translateX(0);
+}
+
+.selected-item-active .order-list {
+    transform: translateX(-100%);
+}
+
+*/

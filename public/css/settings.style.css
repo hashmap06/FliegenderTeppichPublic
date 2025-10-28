@@ -1,0 +1,53 @@
+.languageTranslate {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+#google_translate_element {
+    display: inline-block;
+    width: 200px;
+}
+
+.WholeLanguageBox {
+    margin-left: 20px;
+}
+
+.titleSettings {
+    padding-left: 20px;
+    padding-top: 18px;
+}
+
+.FirstToggleIcon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.toggleIcon {
+    vertical-align: top;
+}
+
+.FirstToggleIcon:hover,
+.HoveredToggleIcon {
+    transform: scale(1.3);
+}
+
+.FirstToggleIcon:active {
+    transform: scale(1.3);
+}
+
+#WhirkMode {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+.WhiteDarkMode {
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+
+/* ALSO DOWNLOAD NICE FONT FOR PAGE IN GENERAL*/

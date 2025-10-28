@@ -1,0 +1,9 @@
+/vendor/
+/uploads/
+config/.env
+.env
+*.sql
+*.log
+.DS_Store
+.idea/
+.vscode/

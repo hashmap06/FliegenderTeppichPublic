@@ -1,0 +1,107 @@
+/* SEARCH FIELD NAVBAR */
+
+.content {
+    /*margin-left: 20px;*/
+    margin-top: 0px;
+}
+
+.searchBar {
+    display: none !important;
+}
+
+.searchBar {
+    display: flex;
+    z-index: 3;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+}
+
+.searchField {
+    flex: 1;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px 0 0 20px;
+    /* Rounded left corners for search field */
+    padding-left: 16px;
+    color: #000;
+}
+
+.searchIcon svg {
+    margin-top: 7px;
+    margin-right: 12px;
+    margin-left: 0px;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+}
+
+
+/*White Mode */
+
+.searchBar {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    width: auto;
+    margin: 5px;
+    width: 300px;
+    position: absolute;
+    right: +1000px;
+    /* Move the .searchBar to the right side */
+}
+
+.searchField:focus {
+    caret-color: #4285f4;
+}
+
+@media screen and (max-width: 1200px) {
+    .searchBar {
+        display: none;
+    }
+}
+
+#RealMenuClick:hover {
+    cursor: pointer;
+}
+
+
+/* CONTENTS OF THE LEFT SUBMENU BAR */
+
+.settingsdropdownsidebar {
+    vertical-align: bottom;
+}
+
+#SettingInLeftPage svg {
+    vertical-align: bottom;
+}
+
+
+/* EXPERIMENT */
+
+body {
+    background-color: #fff;
+    font-family: Trebuchet MS, Lato;
+    padding: 0px;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}

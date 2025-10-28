@@ -1,0 +1,7 @@
+{
+    "require": {
+        "predis/predis": "^2.2",
+        "phpmailer/phpmailer": "^6.9",
+        "nesbot/carbon": "^3.7"
+    }
+}

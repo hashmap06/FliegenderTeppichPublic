@@ -1,0 +1,52 @@
+/* reset.css */
+
+
+/* Remove default margin and padding */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Set default font size and family */
+
+body {
+    font-size: 16px;
+    /*font-family: Arial, sans-serif;*/
+}
+
+
+/* Remove list styles */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Reset anchor text decoration */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Set box-sizing to border-box to avoid box sizing issues */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Add any additional reset styles if needed */

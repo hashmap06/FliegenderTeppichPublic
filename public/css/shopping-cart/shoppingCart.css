@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../../img/whiteMusterBackground.jpg');
+    background-color: #fff;
+}
+
+.shopping {
+    padding-top: 3px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.shopping-cart {
+    width: 750px;
+    height: 100%;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.title {
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.item img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.item:not(:last-child) {
+    border-top: 1px solid #C0C7CE;
+    border-bottom: 1px solid #C0C7CE;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+.delete-btn,
+.like-btn {
+    display: inline-block;
+    Cursor: pointer;
+}
+
+.delete-btn {
+    width: 18px;
+    height: 17px;
+}
+
+.like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: url('../../img/png icons/heart-icon.png');
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+}
+
+.is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.image {
+    margin-right: 50px;
+    width: 40px;
+}
+
+.description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+}
+
+.description span:first-child {
+    margin-bottom: 5px;
+}
+
+.description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+
+.quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+}
+
+.quantity input {
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.plus-btn,
+.minus-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.plus-btn h2,
+.minus-btn h2 {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: rgb(3, 81, 3);
+}
+
+.minus-btn-inside,
+.plus-btn-inside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+.total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .shopping-cart {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border: none;
+    }
+    .item {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image img {
+        width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .buttons {
+        margin-right: 20px;
+    }
+    .shopping {
+        margin-top: -75px;
+    }
+    .image {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+    }
+    .buttons {
+        display: none;
+    }
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.outer-total-price {
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 20px;
+}
+
+.inner-total-price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.with_shipping_field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.outer-total-price h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(77, 75, 75);
+}
+
+#paypal {
+    padding: 10px;
+    margin: 5px;
+    position: relative !important;
+    z-index: 0;
+}

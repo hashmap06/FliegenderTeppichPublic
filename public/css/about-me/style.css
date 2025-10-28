@@ -1,0 +1,42 @@
+#descriptionText {
+    padding-left: 15px;
+    font-family: 'Playpen Sans', cursive;
+    display: flex;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.about-meTitle {
+    padding-left: 15px;
+    padding-top: 25px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: larger;
+}
+
+.authorProfilePic {
+    width: 250px;
+    height: 250px;
+    border-radius: 120px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 45px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: rgb(94, 119, 68) !important;
+    color: white;
+}
+
+@media (max-width: 550px) {
+    .authorProfilePic {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    .textSection1 img {
+        align-items: center;
+    }
+}

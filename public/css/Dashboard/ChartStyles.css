@@ -1,0 +1,42 @@
+#clicksChart {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.UsableSpace {
+    position: absolute;
+    left: 250px;
+    top: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.GesamtAufrufText {
+    color: blueviolet;
+    font-size: larger;
+    font-family: 'Prompt', sans-serif;
+}
+
+.ErrorCenterText {
+    color: aliceblue;
+}
+
+@media (max-width: 737px) {
+    .GesamtAufrufText {
+        display: none !important;
+    }
+    .ErrorCenterText {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    .UsableSpace {
+        left: 10px !important;
+        width: 100%
+    }
+}

@@ -1,0 +1,67 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.versandInfos {
+    margin: 15px;
+    padding-top: 15px;
+}
+
+.versandInfos p {
+    margin: 10px;
+}
+
+.versandInfos h2 {
+    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.shippingPriceField {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.paymentOptionsList ul {
+    padding-left: 10px !important;
+    margin-bottom: 10px;
+}
+
+.paymentOptionsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.moreQuestionsLink {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    margin-bottom: 28px;
+}
+
+.submitButton:hover {
+    background-color: #45a049;
+}

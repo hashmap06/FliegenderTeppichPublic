@@ -1,0 +1,59 @@
+.titleAccount-change {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 45px;
+}
+
+.retype-info-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.retype-info-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.retype-info-form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 69px;
+    max-height: 200px;
+}
+
+.retype-info-form input,
+.retype-info-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.retype-info-form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 840px) {
+    .retype-info-form input,
+    .retype-info-form textarea {
+        margin-bottom: 8px;
+    }
+    .retype-info-form input[type="submit"] {
+        width: 100%;
+    }
+    .titleAccount-change {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        padding-bottom: 15px;
+    }
+}

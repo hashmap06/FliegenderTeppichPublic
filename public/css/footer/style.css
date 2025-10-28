@@ -1,0 +1,128 @@
+/* Reset some default styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #554b4b;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-right li:last-child {
+    margin-right: 0;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #ffcc00;
+}
+
+.MailToSupport {
+    color: white;
+}
+
+.MailToSupport:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .footer-right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 2px;
+    }
+    .footer-left p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3px;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: center !important;
+    }
+    /*Test check for vertical stacking, horizontal center align aswell*/
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-container {
+        font-size: smaller;
+    }
+}
+
+
+/* looks better with only center align style till end --
+@media (max-width: 462px) {
+    .footer-left p {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-right {
+        padding-top: 10px;
+    }
+}*/
